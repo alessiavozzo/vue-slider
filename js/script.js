@@ -39,6 +39,8 @@ createApp({
     },
 
     methods:{
+
+        //buttons
         next(){
             this.activeImage++
             if(this.activeImage > this.slides.length - 1){
@@ -50,7 +52,24 @@ createApp({
             if(this.activeImage < 0){
                 this.activeImage = this.slides.length - 1;
             }
+        },  
+        
+        //autoplay
+        autoPlay(){
+            sliderAutoplay = setInterval(function(){
+                console.log("ciao");
+            }, 3000);
+            console.log("play");
+        },
+        stopAutoplay(){
+            clearInterval(sliderAutoplay);
+            console.log("stop");
         }
+    },
+
+    //life cycle hook
+    mounted(){
+        this.autoPlay();
     }
 }).mount('#app')
 

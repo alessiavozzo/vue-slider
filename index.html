@@ -18,7 +18,7 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <!-- pics -->
-                <div class="item">
+                <div class="item" @mouseover="stopAutoplay()" @mouseleave="autoPlay()">
                     <img v-bind:src="slides[activeImage].image" v-bind:alt=slides[activeImage].title>
                     <div class="text">
                         <h3>{{slides[activeImage].title}}</h3>
