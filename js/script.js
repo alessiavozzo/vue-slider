@@ -4,7 +4,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            
+            sliderAutoplay: "",
             activeImage: 0,            
             //slides
             slides: [

@@ -53,6 +53,8 @@
 .thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
+    transform: scaleX(1.2);
+    box-shadow: 0 0 5px 3px white;
 }
 
 .prev, .next {
