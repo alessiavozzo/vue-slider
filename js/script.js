@@ -56,9 +56,8 @@ createApp({
         
         //autoplay
         autoPlay(){
-            sliderAutoplay = setInterval(function(){
-                console.log("ciao");
-            }, 3000);
+            //console.log(this.next);
+            sliderAutoplay = setInterval(this.next, 3000);
             console.log("play");
         },
         stopAutoplay(){
